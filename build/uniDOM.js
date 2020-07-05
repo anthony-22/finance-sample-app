@@ -65,10 +65,10 @@ var uni;
                 let props = getProps(el);
                 el.outerHTML = componentHTML.getElementsByTagName("template")[0].innerHTML;
                 
-                for (let j = i; j < i + componentExec.children.length; j++){
-                    el = target.children[j];
-                    evalExecTree(componentExec.children[j - i], el, props);
+                for (var j = i; j < i + componentExec.children.length; j++){
+                    evalExecTree(componentExec.children[j - i], target.children[j], props);
                 }
+                i += el.children.length;
             }
         }
     }
@@ -156,15 +156,15 @@ var uni;
         runClosure(tree.closure, context);
         context._didInit = true;
         for (var i = 0; i < children.length; i++){
-            console.log(context.childNodes[children[i].context])
-            var child = evalExecTree(children[i], context.childNodes[children[i].context], props);
+            var child = context.childNodes.length > children[i].context 
+                        && context.childNodes[children[i].context];
+            if (!child || child._didInit) continue;
+            evalExecTree(children[i], child, props);
             if (context.onChildLoad){
                 context.onChildLoad(child);
             }
         }
         if (context.onFullLoad){
-            
-            //console.log(tree, context, props);
             context.onFullLoad();
         }
         return context;

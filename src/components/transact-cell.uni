@@ -4,11 +4,11 @@
             this.imports = ["round-ico"];
             console.log("hi")
             this.onFullLoad = () => {
-                //console.log(this.props)
-                //this.find("img").src = "res/"+this.props.cat.toLowerCase()+".png";
+                console.log(this.props)
+                this.find("img").src = "res/"+this.props.cat.toLowerCase()+".png";
             }
         }
-        
+        <round-ico color="#eee"></round-ico>
         <span class="desc">{
             this.innerText = this.props.desc;
         }</span>
