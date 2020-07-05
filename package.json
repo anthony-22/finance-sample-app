@@ -1,0 +1,17 @@
+{
+  "name": "banking-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "uni-cmd": "^0.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "concurrently --kill-others \"uni build && live-server --WATCH=/build --mount=/:%cd%/build --wait=200 --no-css-inject\" \"uni watch\"",
+    "build": "uni build"
+  },
+  "author": "",
+  "license": "ISC"
+}

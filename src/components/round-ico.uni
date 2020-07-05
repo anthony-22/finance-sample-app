@@ -1,0 +1,19 @@
+<template>
+    <div class="round-ico light-shadow">
+        {
+            var img = this.find("img");
+            img.src = this.props.src;
+            if (this.props.color){
+                this.style["background-color"] = this.props.color;
+            }
+        }
+        <img/>
+        <span>
+            {
+                if (this.props.title){
+                    this.innerText = this.props.title;
+                }
+            }
+        </span>
+    </div>
+</template>

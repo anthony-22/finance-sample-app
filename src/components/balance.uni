@@ -1,0 +1,6 @@
+<template>
+    <div id="balance">
+        <h6 id="label-balance" style="color: #eee">Balance:</h6>
+        <h1 id="amount">$ 35,403.77</h1>
+    </div>
+</template>

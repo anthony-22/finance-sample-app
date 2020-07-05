@@ -1,0 +1,23 @@
+<template>
+    <div class="transact-cell">
+        {
+            this.imports = ["round-ico"];
+            console.log("hi")
+            this.onFullLoad = () => {
+                //console.log(this.props)
+                //this.find("img").src = "res/"+this.props.cat.toLowerCase()+".png";
+            }
+        }
+        
+        <span class="desc">{
+            this.innerText = this.props.desc;
+        }</span>
+        <span class="amount v-center">{
+            this.style.color = this.props.amount.indexOf("-") == -1 ? "green" : "red"; 
+            this.innerText = this.props.amount;
+        }</span>
+        <span class="date">{
+            this.innerText = this.props.date;
+        }</span>
+    </div>
+</template>

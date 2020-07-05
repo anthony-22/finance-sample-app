@@ -1,0 +1,23 @@
+<template>
+    <div id="transaction">
+        <h2 >History</h2>
+        <div class="listview">
+            {
+                this.imports = ["transact-cell"];
+            }
+            <transact-cell
+             desc="Starbucks Inc."
+             date="Today 2:31 PM"
+             cat="drink"
+             amount="-5.49">
+            </transact-cell>
+            
+            <transact-cell
+            desc="ECORP PAY"
+            date="Yesterday 10:24 AM"
+            cat="money"
+            amount="+2,788.44">
+           </transact-cell>
+        </div>
+    </div>
+</template>

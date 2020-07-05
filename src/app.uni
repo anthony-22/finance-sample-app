@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        {
+            this.imports = ["root"];
+        }
+        <root></root>
+    </body>
+    <script src="uniDOM.js"></script>
+    <script src="main.js"></script>
+</html>

@@ -1,0 +1,9 @@
+<template>
+    <div id="history">
+        {
+            this.imports = ["navbar", "transaction"];
+        }
+        <navbar></navbar>
+        <transaction></transaction>
+    </div>
+</template>

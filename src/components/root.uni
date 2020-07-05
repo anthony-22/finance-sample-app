@@ -1,0 +1,9 @@
+<template>
+  <div id="root">
+    {
+      this.imports = ["history", "balance"];
+    }
+    <history></history>
+    <balance></balance>
+  </div>
+</template>
