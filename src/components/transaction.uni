@@ -1,23 +1,22 @@
 <template>
     <div id="transaction">
-        <h2 >History</h2>
+        <h2>History</h2>
         <div class="listview">
             {
-                this.imports = ["transact-cell"];
+            this.imports = ["transact-cell"];
             }
-            <transact-cell
-             desc="Starbucks Inc."
-             date="Today 2:31 PM"
-             cat="drink"
-             amount="-5.49">
+            <transact-cell desc="Starbucks" date="Today 2:31 PM" cat="drink" amount="-5.49">
             </transact-cell>
-            
-            <transact-cell
-            desc="ECORP PAY"
-            date="Yesterday 10:24 AM"
-            cat="money"
-            amount="+2,788.44">
-           </transact-cell>
+            <transact-cell desc="ECORP PAY" date="Yesterday 10:24 AM" cat="money" amount="+2,788.44">
+            </transact-cell>
+            <transact-cell desc="McDonalds" date="7/5/20 3:42 PM" cat="food" amount="-11.99">
+            </transact-cell>
+            <transact-cell desc="Spotify Premium" date="7/5/20 12:01 PM" cat="money" amount="-10.99">
+            </transact-cell>
+            <transact-cell desc="Chatime" date="7/4/20 11:44 AM" cat="drink" amount="-6.49">
+            </transact-cell>
+            <transact-cell desc="Uber Eats" date="7/4/20 10:26 AM" cat="food" amount="-15.45">
+            </transact-cell>
         </div>
     </div>
 </template>

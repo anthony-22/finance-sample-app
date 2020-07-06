@@ -3,9 +3,9 @@
         {
             this.imports = ["round-ico"];
         }
-        <round-ico color="#ff6e6e" title="Deposit" src="res/money.png"></round-ico>
-        <round-ico color="#ffec99" title="Transfer" src="res/bank.png"></round-ico>
-        <round-ico color="#ccff99" title="Invest" src="res/invest.png"></round-ico>
-        <round-ico color="#a4fcde" title="Settings" src="res/settings.png"></round-ico>
+        <round-ico squared="true" color="#ff6e6e" title="History" src="res/wallet.png"></round-ico>
+        <round-ico squared="true" color="#ffec99" title="Transfer" src="res/bank.png"></round-ico>
+        <round-ico squared="true" color="#ccff99" title="Invest" src="res/invest.png"></round-ico>
+        <round-ico squared="true" color="#a4fcde" title="Settings" src="res/settings.png"></round-ico>
     </div>
 </template>

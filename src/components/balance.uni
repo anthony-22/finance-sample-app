@@ -1,6 +1,21 @@
 <template>
     <div id="balance">
+        {
+            var balance = 2584.77;
+            var currentAnim = 0;
+            var amount = this.find("#amount");
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+            (async function() {
+                for (let i = 0; i < 100; i ++){
+                    await sleep(2);
+                    currentAnim += balance / 100;
+                    amount.innerText = "$ "+parseFloat(currentAnim.toFixed(2)).toLocaleString();
+                }
+            })()
+        }
         <h6 id="label-balance" style="color: #eee">Balance:</h6>
-        <h1 id="amount">$ 35,403.77</h1>
+        <h1 id="amount">$ 0.00</h1>
     </div>
 </template>

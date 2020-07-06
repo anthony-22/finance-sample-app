@@ -6,6 +6,9 @@
             if (this.props.color){
                 this.style["background-color"] = this.props.color;
             }
+            if (this.props.squared){
+                this.style["border-radius"] = "12px";
+            }
         }
         <img/>
         <span>
