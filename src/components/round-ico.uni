@@ -1,6 +1,7 @@
 <template>
     <div class="round-ico light-shadow">
         {
+            var root = document.getElementById("root");
             var img = this.find("img");
             img.src = this.props.src;
             if (this.props.color){
@@ -8,6 +9,15 @@
             }
             if (this.props.squared){
                 this.style["border-radius"] = "12px";
+            }
+            if (this.props.screen){
+                this.onclick = () => {
+                    if (root.state.screen == this.props.screen){
+                        return;
+                    }
+                    console.log("clicked")
+                    this.setState({screen: this.props.screen});
+                };
             }
         }
         <img/>

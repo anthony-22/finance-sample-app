@@ -1,0 +1,18 @@
+<template>
+    <div id="transfer" class="container">
+        {
+            this.imports = ["navbar", "transaction"];
+        }
+        <navbar></navbar>
+        <div class="child-container">
+            {
+                this.imports = ["textfield"];
+            }
+            <h2>Transfer</h2>
+            <textfield src="res/mail.png" placeholder="Name / Company"></textfield>
+            <textfield src="res/money2.png" placeholder="Amount"></textfield>
+            <textfield src="res/clipboard.png" placeholder="Notes"></textfield>
+            <button id="transferBtn"><b>Send</b></button>
+        </div>
+    </div>
+</template>

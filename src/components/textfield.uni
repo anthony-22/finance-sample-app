@@ -1,0 +1,16 @@
+<template>
+    <div class="textfield">
+        {
+            var input = this.find("input");
+            input.placeholder = this.props.placeholder;
+        }
+        <div class="ico">
+            {
+                var img = this.find("img");
+                img.src = this.props.src;
+            }
+            <img>
+        </div>
+        <input type="text">
+    </div>
+</template>

@@ -1,5 +1,5 @@
 <template>
-    <div id="history">
+    <div id="history" class="container">
         {
             this.imports = ["navbar", "transaction"];
         }

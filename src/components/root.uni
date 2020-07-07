@@ -2,8 +2,20 @@
   <div id="root">
     {
       this.imports = ["history", "balance"];
+      this.state = {
+        screen: "transfer"
+      }
+      var clrScreen = () => {
+        var screens = document.getElementsByClassName("container");
+        for (let i = 0; i < screens.length; i++){
+          screens[i].remove();
+        }
+      }
+      this.bindState(state => {
+        clrScreen();
+        this.addComponent(state.screen);
+      });
     }
-    <history></history>
     <balance></balance>
   </div>
 </template>

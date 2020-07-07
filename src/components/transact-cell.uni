@@ -2,7 +2,6 @@
     <div class="transact-cell">
         {
             this.imports = ["round-ico"];
-            console.log("hi")
             this.onFullLoad = () => {
                 console.log(this.props)
                 this.find("img").src = "res/"+this.props.cat.toLowerCase()+".png";
