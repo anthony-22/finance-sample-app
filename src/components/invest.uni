@@ -1,0 +1,11 @@
+<template>
+    <div id="history" class="container">
+        {
+            this.imports = ["navbar", "transaction"];
+        }
+        <navbar></navbar>
+        <div class="child-container">
+            <h2>Overview</h2>
+        </div>
+    </div>
+</template>

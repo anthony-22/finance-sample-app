@@ -3,7 +3,7 @@
     {
       this.imports = ["history", "balance"];
       this.state = {
-        screen: "transfer"
+        screen: "invest"
       }
       var clrScreen = () => {
         var screens = document.getElementsByClassName("container");
